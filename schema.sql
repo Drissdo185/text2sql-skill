@@ -16,8 +16,8 @@ CREATE TABLE customers (
                            zalo_user_id VARCHAR(255) UNIQUE,
                            phone_number VARCHAR(20) UNIQUE NOT NULL,
                            name VARCHAR(255) NOT NULL,
-                           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                           updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                           birthdate DATE NOT NULL,
+                           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- vouchers table (voucher templates)
